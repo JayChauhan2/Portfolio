@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <style type="text/tailwindcss">
         @theme {
@@ -34,10 +34,7 @@
                     Hi, I'm Jay.
                 </p>
                 <p class="text-sm text-gray-600 mt-2 mb-2 ml-2 max-w-4xl leading-relaxed">
-                    Here are some of my projects.
-                </p>
-                <p class="text-sm text-gray-600 mt-2 mb-2 ml-2 max-w-4xl leading-relaxed">
-                    Here are some of my projects.
+                    Below are some of my projects. <a href="https://www.goodreads.com/review/list/187651331-jay-chauhan?shelf=read" class="italic underline">Check out the books I'm reading.</a>
                 </p>
             </div>
             
@@ -338,6 +335,10 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script>
         lucide.createIcons();
+        document.querySelectorAll('a').forEach(link => {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+        });
     </script>
 </body>
 
